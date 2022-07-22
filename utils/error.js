@@ -1,7 +1,7 @@
-const error = function (msg = "Something went wrong", status = 500) {
-  const error = new Error(msg);
-  error.status = status;
-  return error;
-};
+function error(msg = "Something Went Wrong", status = 500) {
+  const e = new Error(msg);
+  e.status = status;
+  return e;
+}
 
 module.exports = error;
